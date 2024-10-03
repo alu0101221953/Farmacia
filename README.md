@@ -27,3 +27,17 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
     así como la fecha de compra. Además, es necesario conocer los datos bancarios de los clientes con crédito,
     así como la fecha de pago de las compras que realizan.
     
+2. ***Entidades***
+
+   1. Farmacia:
+   2. Medicamento:
+   3. Laboratorio:
+   4. Cliente:
+   5. Compra:
+   6. Familia:
+  
+3. ***Atributos***
+
+4. ***Relaciones***
+
+5. ***Restricciones Semánticas***
