@@ -1,7 +1,7 @@
 # Modelo Entidad/Relación. Farmacia
 ---
 
-1. ***Descripción del Supuesto***
+## 1. ***Descripción del Supuesto***
    
 La gestión de una farmacia requiere poder llevar control de los medicamentos existentes, así como de los que se van sirviendo, para lo cual se pretende diseñar un sistema acorde a las      siguientes especificaciones:
 
@@ -27,7 +27,7 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
     así como la fecha de compra. Además, es necesario conocer los datos bancarios de los clientes con crédito,
     así como la fecha de pago de las compras que realizan.
     
-2. ***Entidades***
+## 2. ***Entidades***
 
    1. Farmacia:
    2. Medicamento:
@@ -36,8 +36,14 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
    5. Compra:
    6. Familia:
   
-3. ***Atributos***
+## 3. ***Atributos***
 
-4. ***Relaciones***
+## 4. ***Relaciones***
 
-5. ***Restricciones Semánticas***
+## 5. ***Restricciones Semánticas***
+   
+   ● El tipo de venta de un ***Medicamento*** es de venta libre o con receta.
+   ● En ***Cliente***, el atributo _Crédito_ es de tipo __bool__.
+   ● En ***Cliente***, los atributos _Datos Bancarios_ y _Fecha de Pagos_ son __null__ si no tiene credito.
+
+    
