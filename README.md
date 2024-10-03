@@ -29,12 +29,17 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
     
 ## 2. ***Entidades***
 
-   #### 1. Farmacia:
-   #### 2. Medicamento:
-   #### 3. Laboratorio:
-   #### 4. Cliente:
-   #### 5. Compra:
-   #### 6. Familia:
+   #### 1. Farmacia
+         
+   #### 2. Medicamento
+   
+   #### 3. Laboratorio
+   
+   #### 4. Cliente
+   
+   #### 5. Compra
+   
+   #### 6. Familia
   
 ## 3. ***Atributos***
 
@@ -48,6 +53,6 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
    
    ● En ***Cliente***, los atributos _Datos Bancarios_ y _Fecha de Pagos_ son __null__ si no tiene credito.
 
-   ●
+   ● Suponemos que un ***Medicamento*** pertenece unicamente a un tipo de ***Familia***.
 
     
