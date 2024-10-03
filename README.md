@@ -5,7 +5,9 @@
    
 La gestión de una farmacia requiere poder llevar control de los medicamentos existentes, así como de los que se van sirviendo, para lo cual se pretende diseñar un sistema acorde a las      siguientes especificaciones:
 
-    ● En la farmacia se requiere una catalogación de todos los medicamentos existentes, para lo cual se almacenará un código de medicamento, nombre del medicamento, tipo de medicamento (jarabe,   comprimido, pomada,...) unidades en stock, unidades vendidas y precio. Existen medicamentos de venta libre y otros que sólo se pueden dispensar con receta médica.
+    ● En la farmacia se requiere una catalogación de todos los medicamentos existentes, para lo cual se almacenará
+    un código de medicamento, nombre del medicamento, tipo de medicamento (jarabe,   comprimido, pomada,...)
+    unidades en stock, unidades vendidas y precio. Existen medicamentos de venta libre y otros que sólo se pueden dispensar con receta médica.
     
     ● En la farmacia se requiere una catalogación de todos los medicamentos existentes, para lo cual se almacenará un código de medicamento, nombre del medicamento, tipo de medicamento (jarabe,   comprimido, pomada,...) unidades en stock, unidades vendidas y precio. Existen medicamentos de venta libre y otros que sólo se pueden dispensar con receta médica.
     
