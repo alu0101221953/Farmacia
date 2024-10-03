@@ -46,13 +46,13 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
 ## 4. ***Relaciones***
 
 ## 5. ***Restricciones Semánticas***
-   
-      ● El tipo de venta de un ***Medicamento*** es de venta libre o con receta.
       
-      ● En ***Cliente***, el atributo _Crédito_ es de tipo __bool__.
+      El tipo de venta de un ***Medicamento*** es de venta libre o con receta.
       
-      ● En ***Cliente***, los atributos _Datos Bancarios_ y _Fecha de Pagos_ son __null__ si no tiene credito.
-   
-      ● Suponemos que un ***Medicamento*** pertenece unicamente a un tipo de ***Familia***.
+      En ***Cliente***, el atributo _Crédito_ es de tipo __bool__.
+      
+      En ***Cliente***, los atributos _Datos Bancarios_ y _Fecha de Pagos_ son __null__ si no tiene credito.
+      
+      Suponemos que un ***Medicamento*** pertenece unicamente a un tipo de ***Familia***.
 
     
