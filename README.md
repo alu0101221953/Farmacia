@@ -30,12 +30,20 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
 ## 2. ***Entidades***
 
    #### 1. Medicamento
-      Es la entidad que representa aquellas sustancias que sirven para prevenir, curar o aliviar enfermedades.
-      Se encuentra caracterizada por los siguientes atributos:
-         1. Código_Med: Es el identificador único de cada medicamento.
-         2. Nombre: ES el nombre cientifico del medicamento.
-         3. Tipo: Es el tipo del fármaco (jarabe,   comprimido, pomada,...).
-         4. 
+   Es la entidad que representa aquellas sustancias que sirven para prevenir, curar o aliviar enfermedades.
+   Se encuentra caracterizada por los siguientes atributos:
+   
+      1. **Código_Med:** Es el identificador único de cada medicamento.
+      
+      2. **Nombre**: ES el nombre cientifico del medicamento.
+      
+      3. **Tipo**: Es el tipo del fármaco (jarabe,   comprimido, pomada,...).
+      
+      4. **Stock**: Unidades disponibles de ese medicamento.
+      
+      5. **Unidades Vendidad**: Ejemplares que se han liquidado.
+      
+      6. **Tipo Venta**: Indica si el medicamento es de venta libre o requiere receta.
    
    #### 2. Laboratorio
 
