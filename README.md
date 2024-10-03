@@ -31,19 +31,31 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
 
    #### 1. Medicamento
    Es la entidad que representa aquellas sustancias que sirven para prevenir, curar o aliviar enfermedades.
-   Se encuentra caracterizada por los siguientes atributos:
-      1. **Código_Med:** Es el identificador único de cada medicamento.
-      2. **Nombre**: ES el nombre cientifico del medicamento.
-      3. **Tipo**: Es el tipo del fármaco (jarabe,   comprimido, pomada,...).
-      4. **Stock**: Unidades disponibles de ese medicamento.
-      5. **Unidades Vendidad**: Ejemplares que se han liquidado.
-      6. **Tipo Venta**: Indica si el medicamento es de venta libre o requiere receta.
+   Se encuentra caracterizada por los siguientes atributos:  
+   + **Código_Med:** Es el identificador único de cada medicamento. Es el atributo clave.  
+   + **Nombre**: ES el nombre cientifico del medicamento.  
+   + **Tipo**: Es el tipo del fármaco (jarabe,   comprimido, pomada,...).  
+   + **Stock**: Unidades disponibles de ese medicamento.  
+   + **Unidades Vendidad**: Ejemplares que se han liquidado.  
+   + **Tipo Venta**: Indica si el medicamento es de venta libre o requiere receta.  
    
    #### 2. Laboratorio
+   Lugar en el que se desarrollan los medicamentos. Este puede proveer de medicamentos a la farmacia.
+   Tiene los siguientes atributos:  
+   + **Código_Lab:** Identificador único de cada laboratorio. Es el atributo clave.  
+   + **Nombre:** Nombre del laboratorio.  
+   + **Teléfono:** Número de teléfono de contacto.  
+   + **Dirección Postal:** Identificación completa del destinatario de un correo.  
+   + **Fax:** Número de contacto fax.  
+   + **Persona Contacto:** Usuario perteneciente al laboratorio con el que se puede contactar.  
 
-   
    #### 3. Cliente
-
+   Personas que van a comprar a la farmacia. Dispone de los siguientes atributos:  
+   + **DNI:** Documento nacional de identificación. Es el atributo clave.  
+   + **Nombre:** Nombre del cliente.  
+   + **Crédito:** Indica si el cliente tiene pagos con crédito. Es de tipo **bool**.  
+   + **Datos Bancarios:** Contiene la información bancaria del cliente. Es **null** si el cliente no tiene crédito.
+   + **Fecha de Pagos:** Contiene las fechas de los pagos con crédito. Es **null** si el cliente no tiene crédito.
    
    #### 4. Compra
 
