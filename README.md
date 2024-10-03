@@ -29,30 +29,35 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
     
 ## 2. ***Entidades***
 
-   #### 1. Farmacia
-         
-   #### 2. Medicamento
+   #### 1. Medicamento
+      Es la entidad que representa aquellas sustancias que sirven para prevenir, curar o aliviar enfermedades.
+      Se encuentra caracterizada por los siguientes atributos:
+         1. Código_Med: Es el identificador único de cada medicamento.
+         2. Nombre: ES el nombre cientifico del medicamento.
+         3. Tipo: Es el tipo del fármaco (jarabe,   comprimido, pomada,...).
+         4. 
    
-   #### 3. Laboratorio
-   
-   #### 4. Cliente
-   
-   #### 5. Compra
-   
-   #### 6. Familia
-  
-## 3. ***Atributos***
+   #### 2. Laboratorio
 
-## 4. ***Relaciones***
+   
+   #### 3. Cliente
 
-## 5. ***Restricciones Semánticas***
+   
+   #### 4. Compra
+
+   
+   #### 5. Familia 
+
+## 3. ***Relaciones***
+
+## 4. ***Restricciones Semánticas***
       
-      El tipo de venta de un ***Medicamento*** es de venta libre o con receta.
-      
-      En ***Cliente***, el atributo _Crédito_ es de tipo __bool__.
-      
-      En ***Cliente***, los atributos _Datos Bancarios_ y _Fecha de Pagos_ son __null__ si no tiene credito.
-      
-      Suponemos que un ***Medicamento*** pertenece unicamente a un tipo de ***Familia***.
+   1. El tipo de venta de un ***Medicamento*** es de venta libre o con receta.
+   
+   2. En ***Cliente***, el atributo _Crédito_ es de tipo __bool__.
+   
+   3. En ***Cliente***, los atributos _Datos Bancarios_ y _Fecha de Pagos_ son __null__ si no tiene credito.
+   
+   4. Suponemos que un ***Medicamento*** pertenece unicamente a un tipo de ***Familia***.
 
     
