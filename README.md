@@ -58,11 +58,45 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
    + **Fecha de Pagos:** Contiene las fechas de los pagos con crédito. Es **null** si el cliente no tiene crédito.
    
    #### 4. Compra
-
+   Recibos de compra por parte de los clientes.
+   + **Código Compra:** Identificar único de cada compra.
+   + **Código Medicamento:** Código de los medicamentos adquiridos por el cliente.
+   + **Unidades Compradas:** Número de unidades de cada medicamento comprado.
+   + **Importe:** Coste total de la compra.
+   + **Fecha:** Fecha de realización de la compra.
+   + **DNI Cliente:** Identificador del comprador en caso de que sea un cliente con crédito.
    
    #### 5. Familia 
+   Agrupamiento de medicamento que sirven para tratar un mismo tipo de enfermedad.
+   + **Codigo Fam:** Identificador del tipo de familia.
+   + **Tipo:** Enfermedades a las que se aplican los medificamento de la familia.
 
 ## 3. ***Relaciones***
+   #### Medicamento - Familia (Pertenece)
+   
+   - **Cardinalidad**: 1:N
+   - **Descripción**: Un medicamento pertenece a una única familia (grupo de enfermedades tratadas), pero una familia puede tener múltiples medicamentos asociados.
+   
+   ---
+   
+   #### Medicamento - Laboratorio (Suministra)
+   
+   - **Cardinalidad**: 1:N
+   - **Descripción**: Cada medicamento es suministrado por un único laboratorio, que puede ser la misma farmacia u otra entidad externa. Un laboratorio puede proveer varios medicamentos diferentes.
+   
+   ---
+   
+   #### Cliente - Compra (Realiza)
+   
+   - **Cardinalidad**: 1:N
+   - **Descripción**: Un cliente puede realizar múltiples compras en la farmacia. Cada compra se asocia a un solo cliente, registrando la información bancaria y la fecha de pago en caso de clientes con crédito.
+   
+   ---
+   
+   #### Compra - Medicamento (Involucra)
+   
+   - **Cardinalidad**: 1:N entre Compra y Medicamento.
+   - **Descripción**: Una compra puede incluir varios medicamentos, y se almacenan las unidades compradas de cada medicamento en cada compra. Esto permite llevar un control detallado de las ventas y el stock.
 
 ## 4. ***Restricciones Semánticas***
       
