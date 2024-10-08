@@ -81,8 +81,8 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
    
    #### Medicamento - Laboratorio (Suministra)
    
-   - **Cardinalidad**: 1:N
-   - **Descripción**: Cada medicamento es suministrado por un único laboratorio, que puede ser la misma farmacia u otra entidad externa. Un laboratorio puede proveer varios medicamentos diferentes.
+   - **Cardinalidad**: N:M
+   - **Descripción**: Cada medicamento puede ser suministrado por varios laboratorios, que pueden ser la misma farmacia u otra entidad externa. Un laboratorio puede proveer varios medicamentos diferentes.
    
    ---
    
@@ -95,8 +95,8 @@ La gestión de una farmacia requiere poder llevar control de los medicamentos ex
    
    #### Compra - Medicamento (Involucra)
    
-   - **Cardinalidad**: 1:N entre Compra y Medicamento.
-   - **Descripción**: Una compra puede incluir varios medicamentos, y se almacenan las unidades compradas de cada medicamento en cada compra. Esto permite llevar un control detallado de las ventas y el stock.
+   - **Cardinalidad**: N:M
+   - **Descripción**: Una compra puede incluir varios medicamentos, y se almacenan las unidades compradas de cada medicamento en cada compra. Un medicamento en específico se puede ver involucrado en varias compras.
 
 ## 4. ***Restricciones Semánticas***
       
